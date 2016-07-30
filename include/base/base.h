@@ -8,7 +8,7 @@
 #endif
 
 #ifdef __cplusplus
-#   define interface extern "C" __interface
+#   define interface extern "C" interface
 #endif
 
 #include "base-types.h"

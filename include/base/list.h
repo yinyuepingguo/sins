@@ -1,5 +1,7 @@
-#ifndef _SINS_LIST_H
-#define _SINS_LIST_H
+#ifndef _SINS_BASE_LIST_H
+#define _SINS_BASE_LIST_H
+
+#include "base.h"
 
 struct list_head {
     struct list_head *next, *prev;
