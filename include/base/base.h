@@ -1,5 +1,5 @@
-#ifndef _SINS_BASE_H
-#define _SINS_BASE_H
+#ifndef _SINS_BASE_BASE_H
+#define _SINS_BASE_BASE_H
 
 #if defined(_WIN32) || defined(WIN64)
 #   define interface __declspec(dllexport)
@@ -11,12 +11,14 @@
 #   define interface extern "C" __interface
 #endif
 
+#include "base-types.h"
+
 #ifndef NULL
 #   define NULL ((void *) 0)
 #endif
 
 #ifndef offsetof
-#   define offsetof(TYPE, MEMBER)      ((unsigned long)&((TYPE *)0)->MEMBER)
+#   define offsetof(TYPE, MEMBER)      ((slong)&((TYPE *)0)->MEMBER)
 #endif
 
 #ifndef offsetofend
